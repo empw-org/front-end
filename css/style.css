@@ -8,7 +8,6 @@
 .langing-page-header {
   position: relative;
   width: 100%;
-  /* height: 100vh; */
   background: linear-gradient(to right, rgb(2, 187, 204) 20%, rgb(3, 128, 208));
   overflow: hidden;
 }
@@ -41,12 +40,12 @@
 }
 
 /*==============*/
-.menues {
+.menus {
   display: flex;
   align-items: center;
 }
 
-.menue-items {
+.menu-items {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -56,18 +55,18 @@
   justify-items: center;
 }
 
-.menue-items li {
+.menu-items li {
   text-decoration: none;
   color: white;
   opacity: 0.8;
 }
 
-.menue-items li:hover {
+.menu-items li:hover {
   color: white;
   opacity: 1;
 }
 
-.menue-items li a {
+.menu-items li a {
   text-decoration: none;
   color: inherit;
 }
@@ -83,24 +82,26 @@
 
 /*===========================*/
 
-.title-and-picture {
+.title-and-brief-intro {
   margin-top: 20px;
   color: white;
   margin-bottom: 10em;
-}
-
-.title-and-btns-section {
   text-align: center;
 }
 
-.title-and-btns-section h1 {
+#logo-text {
+  width: 50%;
+  min-width: 350px;
+}
+
+.title-and-brief-intro h1 {
   font-size: 40px;
   line-height: 1.2em;
   margin-bottom: 5px;
   font-family: "Kurale";
 }
 
-.title-and-btns-section p {
+.title-and-brief-intro p {
   font-size: 22px;
   margin-top: 1em;
 }
