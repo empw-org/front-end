@@ -84,24 +84,22 @@
 /*===========================*/
 
 .title-and-picture {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
   margin-top: 20px;
   color: white;
   margin-bottom: 10em;
 }
 
-.title-and-btns-secion {
+.title-and-btns-section {
   text-align: center;
 }
 
-.title-and-btns-secion h1 {
+.title-and-btns-section h1 {
   font-size: 40px;
   line-height: 1.2em;
   margin-bottom: 5px;
 }
 
-.title-and-btns-secion p {
+.title-and-btns-section p {
   font-size: 22px;
   margin-top: 1em;
 }
