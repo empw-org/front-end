@@ -110,7 +110,8 @@
   margin-top: 3em;
 }
 
-.donate-request-buttons button {
+.donate-request-buttons button,
+.video-and-article-section button {
   background: transparent;
   border: 2px solid white;
   color: white;
@@ -118,9 +119,11 @@
   padding: 15px;
   margin-right: 15px;
   font-weight: 600;
+  font-size: 20px;
 }
 
-.donate-request-buttons button:hover {
+.donate-request-buttons button:hover,
+.video-and-article-section button:hover {
   color: rgb(2, 187, 204);
   background: white;
   cursor: pointer;
