@@ -11,8 +11,9 @@
       href="assets/icons/favicon.png"
     />
     <link rel="stylesheet" href="css/style.css" />
+
     <link
-      href="https://fonts.googleapis.com/css?family=Josefin+Sans:700|Kurale"
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans|Kurale&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -58,16 +59,11 @@
         <div class="about-title">
           <h1>About</h1>
         </div>
-        <div class="video-and-article-section">
-          <iframe
-            width="660"
-            height="415"
-            src="https://www.youtube.com/embed/OoAoiTvAVxw"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+        <div class="image-and-article-section">
+          <img src="assets/images/family-drinking.jpg" alt="" />
           <article>
+            <h1>Enhanced Management of Pure Water</h1>
+
             <p>
               Egypt faces a serious problem in many cities and areas because of
               water shortage. Lately, the problem of Nahda Dam appears on the
@@ -79,7 +75,6 @@
               addition, Consumers have a problem in rationing water consumption.
               These are the problems we solve.
             </p>
-            <button>Read More</button>
           </article>
         </div>
 
@@ -91,7 +86,7 @@
           <h1>Our Services</h1>
         </div>
         <div class="our-services-description">
-          <div class="delivering-water">
+          <div class="our-service-card">
             <img src="assets/icons/pickup-truck.svg" alt="Deliver" />
             <h1>Delivering</h1>
             <p>
@@ -100,8 +95,9 @@
               eaque ullam dolorum error doloribus pariatur blanditiis delectus
               sint repellendus accusamus.
             </p>
-        </div>
-          <div class="pure-water">
+          </div>
+
+          <div class="our-service-card">
             <img src="assets/icons/water.svg" alt="Pure Water" />
             <h1>Pure Water</h1>
             <p>
@@ -110,8 +106,9 @@
               Iste id fugit, aspernatur, quo sit nisi, sunt ut explicabo odit
               hic eos.
             </p>
-        </div>
-          <div class="cheap-service">
+          </div>
+
+          <div class="our-service-card">
             <img src="assets/icons/pay.svg" alt="" />
             <h1>Cheap Service</h1>
             <p>
@@ -120,11 +117,58 @@
               placeat et aliquam sapiente natus nam eum velit ut, eveniet, autem
               hic!
             </p>
-        </div>
+          </div>
+
+          <div class="our-service-card">
+            <img src="assets/icons/rationalize.svg" alt="" />
+            <h1>Help Save Water</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
+              quibusdam optio alias ipsum dolor iure quidem culpa nesciunt
+              placeat et aliquam sapiente natus nam eum velit ut, eveniet, autem
+              hic!
+            </p>
+          </div>
         </div>
       </section>
     </main>
+
     <footer class="landing-page-footer">
+      <h1>Contact Us</h1>
+      <div class="contact-us-section">
+        <div class="contact-us-form">
+          <div class="form-wrapper">
+            <form id="contact-us-form">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Name"
+                required
+              />
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
+              <textarea
+                name="message"
+                placeholder="Message..."
+                rows="10"
+                required
+              ></textarea>
+              <button id="submit" type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="contact-us-image">
+          <img src="assets/images/contact-us.png" />
+        </div>
+      </div>
+
       <section class="contact-us-and-apps">
         <div class="contact-us">
           <div class="contact-us-buttons">
@@ -168,8 +212,16 @@
       </section>
 
       <section class="rights">
-        <p>&copy; 2020 All rights preserved EMPW Org.</p>
+        <p>
+          &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          All rights reserved EMPW Org.
+        </p>
       </section>
     </footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>

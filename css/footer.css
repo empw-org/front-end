@@ -1,0 +1,111 @@
+.landing-page-footer {
+  padding: 4% 10% 2% 10%;
+  background: linear-gradient(to right, #00bdce 6%, #0071d2);
+  color: white;
+}
+
+.rights {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.contact-us-and-apps {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-us {
+  margin-right: 15px;
+}
+
+.contact-us-buttons,
+.app-buttons {
+  position: relative;
+  width: 176px;
+  height: 50px;
+  padding: 0 10px;
+  border-radius: 25px;
+  overflow: hidden;
+  border: 2px solid white;
+}
+
+.contact-us-text,
+.app-text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-family: 'Kurale', sans-serif;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-us-overlay,
+.app-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  transition: all 0.3s;
+}
+
+.contact-us-links,
+.app-links {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact-us-link,
+.app-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(to right, #00bdce 6%, #0071d2);
+
+  border-radius: 50%;
+  cursor: pointer;
+  transform: translateY(calc(100% * 2));
+  margin: 10px 5px;
+  transition: all 0.3s;
+}
+
+.contact-us-link img,
+.app-link img {
+  width: 60%;
+  height: 60%;
+}
+
+.contact-us-buttons:hover,
+.app-buttons:hover {
+  border: none;
+}
+.contact-us-buttons:hover .contact-us-overlay,
+.app-buttons:hover .app-overlay {
+  background-color: white;
+}
+
+.contact-us-buttons:hover .contact-us-link,
+.app-buttons:hover .app-link {
+  transform: translateY(0);
+}
+
+.contact-us-link:nth-child(2) {
+  transition-delay: 0.05s;
+}
+
+.contact-us-link:nth-child(3),
+.app-link:nth-child(2) {
+  transition-delay: 0.1s;
+}
+
+.contact-us-link:nth-child(4) {
+  transition-delay: 0.15s;
+}
