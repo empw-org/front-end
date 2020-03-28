@@ -1,0 +1,84 @@
+.contact-us-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: white;
+  border-radius: 15px;
+  margin: 20px;
+}
+
+.contact-us-image {
+  width: 100%;
+  height: 100%;
+}
+
+.contact-us-image img {
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+/*Form*/
+
+.contact-us-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-wrapper {
+  width: 80%;
+}
+
+.contact-us-form input,
+.contact-us-form textarea {
+  display: block;
+  width: 100%;
+  border: none;
+  border-radius: 30px;
+  background-color: #ebeff2;
+  padding: 15px 15px 15px 50px;
+  margin-top: 10px;
+}
+
+.contact-us-form input::placeholder,
+.contact-us-form textarea::placeholder {
+  color: #999ba7;
+}
+
+.contact-us-form textarea {
+  resize: none;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+input#name {
+  background-image: url('../assets/icons/user.svg');
+  background-repeat: no-repeat;
+  background-position: 15px;
+  background-size: 20px 20px;
+}
+
+input#email {
+  background-image: url('../assets/icons/mail.svg');
+  background-repeat: no-repeat;
+  background-position: 15px;
+  background-size: 15px 15px;
+}
+
+button#submit {
+  background: linear-gradient(to right, #00bdce 6%, #0071d2);
+  border: 2px solid white;
+  color: white;
+  border-radius: 2em;
+  padding: 15px;
+  margin-right: 15px;
+  font-weight: 600;
+  font-size: 20px;
+  width: 100%;
+  margin: 10px 0 10px 0;
+}
+
+button#submit:hover {
+  cursor: pointer;
+}
