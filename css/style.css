@@ -11,3 +11,42 @@
   box-sizing: border-box;
   font-family: 'Josefin sans', sans-serif;
 }
+
+@media only screen and (max-width: 600px) {
+  /*Header */
+  .menus {
+    justify-self: end;
+  }
+
+  .menu-items {
+    display: none;
+  }
+
+  .hamburger-icon {
+    display: block;
+    color: white;
+    font-size: 30px;
+    margin-right: 20px;
+  }
+
+  /*About*/
+  .image-and-article-section {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  /*Our service*/
+  .our-services-description {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-row-gap: 10px;
+  }
+
+  /*Contact us*/
+  .contact-us-image {
+    display: none;
+  }
+  .contact-us-section {
+    grid-template-columns: 1fr;
+  }
+}
