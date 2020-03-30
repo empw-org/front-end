@@ -74,6 +74,16 @@
   width: 20px;
 }
 
+.hamburger-icon {
+  display: none;
+  opacity: 0.8;
+}
+
+.hamburger-icon:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
 /*Header-Info*/
 
 .title-and-brief-intro {
