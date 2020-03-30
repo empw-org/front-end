@@ -9,91 +9,80 @@
   margin-top: 1em;
 }
 
-.contact-us-and-apps {
+.contact-us {
   display: flex;
   justify-content: center;
 }
 
-.contact-us {
-  margin-right: 15px;
-}
-
-.contact-us-buttons,
-.app-buttons {
+.contact-us-buttons {
   position: relative;
   width: 176px;
   height: 50px;
   padding: 0 10px;
   border-radius: 25px;
   overflow: hidden;
-  border: 2px solid white;
+  background: linear-gradient(to right, #00bdce 6%, #0071d2);
 }
 
-.contact-us-text,
-.app-text {
+.contact-us-text {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  font-family: 'Kurale', sans-serif;
-
+  font-family: 'Josefin sans', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: white;
 }
 
-.contact-us-overlay,
-.app-overlay {
+.contact-us-overlay {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: transparent;
   transition: all 0.3s;
 }
 
-.contact-us-links,
-.app-links {
+.contact-us-links {
   position: relative;
   display: flex;
   justify-content: space-around;
 }
 
-.contact-us-link,
-.app-link {
+.contact-us-link {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 30px;
   height: 30px;
-  background: linear-gradient(to right, #00bdce 6%, #0071d2);
-
+  background-color: white;
   border-radius: 50%;
   cursor: pointer;
   transform: translateY(calc(100% * 2));
   margin: 10px 5px;
   transition: all 0.3s;
+  text-decoration: none;
 }
 
-.contact-us-link img,
-.app-link img {
-  width: 60%;
-  height: 60%;
+.contact-us-link i {
+  background: linear-gradient(to right, #00bdce 6%, #0071d2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.contact-us-buttons:hover,
-.app-buttons:hover {
+.contact-us-buttons:hover {
   border: none;
 }
-.contact-us-buttons:hover .contact-us-overlay,
-.app-buttons:hover .app-overlay {
-  background-color: white;
+.contact-us-buttons:hover .contact-us-overlay {
+  background: linear-gradient(to right, #00bdce 6%, #0071d2);
 }
 
-.contact-us-buttons:hover .contact-us-link,
-.app-buttons:hover .app-link {
+.contact-us-buttons:hover .contact-us-link {
   transform: translateY(0);
 }
 
@@ -101,11 +90,51 @@
   transition-delay: 0.05s;
 }
 
-.contact-us-link:nth-child(3),
-.app-link:nth-child(2) {
+.contact-us-link:nth-child(3) {
   transition-delay: 0.1s;
 }
 
 .contact-us-link:nth-child(4) {
   transition-delay: 0.15s;
+}
+/*Social Buttons*/
+
+.flex {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+.app-btn {
+  width: 45%;
+  max-width: 160px;
+  color: #fff;
+  margin: 20px 10px;
+  text-align: left;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 10px;
+  text-transform: uppercase;
+  padding: 10px;
+}
+.app-btn.blu {
+  background-color: #101010;
+  -webkit-transition: background-color 0.25s linear;
+  transition: background-color 0.25s linear;
+}
+.app-btn.blu:hover {
+  background-color: #454545;
+}
+.app-btn i {
+  width: 20%;
+  text-align: center;
+  font-size: 28px;
+  margin-right: 7px;
+}
+.app-btn .big-txt {
+  font-size: 17px;
+  text-transform: capitalize;
 }

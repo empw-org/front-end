@@ -3,7 +3,7 @@
   grid-template-columns: repeat(2, 1fr);
   background-color: white;
   border-radius: 15px;
-  margin: 20px;
+  margin: 20px 0 30px 0;
 }
 
 .contact-us-image {
@@ -24,6 +24,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 25px 15px;
 }
 
 .form-wrapper {
@@ -39,6 +40,11 @@
   background-color: #ebeff2;
   padding: 15px 15px 15px 50px;
   margin-top: 10px;
+}
+
+.contact-us-form input:focus,
+.contact-us-form textarea:focus {
+  outline: none;
 }
 
 .contact-us-form input::placeholder,
@@ -72,13 +78,43 @@ button#submit {
   color: white;
   border-radius: 2em;
   padding: 15px;
-  margin-right: 15px;
   font-weight: 600;
   font-size: 20px;
   width: 100%;
-  margin: 10px 0 10px 0;
+  margin-top: 10px;
+  transition: all 0.3s;
 }
 
 button#submit:hover {
   cursor: pointer;
+}
+
+button#submit i {
+  display: none;
+  font-size: 17px;
+}
+
+button#submit:hover i {
+  display: inline;
+}
+
+button#submit:hover span {
+  display: none;
+}
+
+/*====*/
+
+.or-separator {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  justify-items: center;
+  align-items: center;
+  color: #999ba7;
+  margin: 15px 0;
+}
+
+.hr-line {
+  height: 1px;
+  width: 100%;
+  background-color: #d6dadc;
 }
