@@ -12,6 +12,12 @@
   font-family: 'Josefin sans', sans-serif;
 }
 
+.section-header {
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Kurale';
+}
+
 @media only screen and (max-width: 600px) {
   /*Header */
   .menus {
